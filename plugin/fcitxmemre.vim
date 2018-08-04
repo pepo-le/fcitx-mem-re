@@ -29,7 +29,7 @@ if has("unix")
 
         let s:input_status = system("fcitx-remote")
         if s:input_status == 2
-            let l:a = system("fcitx-remote -c")
+            call system("fcitx-remote -c")
             let b:input_toggle = 1
         endif
         return "\<ESC>"
@@ -42,7 +42,7 @@ if has("unix")
 
         let s:input_status = system("fcitx-remote")
         if s:input_status != 2 && b:input_toggle == 1
-            let l:a = system("fcitx-remote -o")
+            call system("fcitx-remote -o")
             let b:input_toggle = 0
         endif
     endfunction
