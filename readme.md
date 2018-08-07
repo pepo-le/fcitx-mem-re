@@ -1,4 +1,4 @@
-# fcitx-mem
+# fcitx-mem-re
 Vimで挿入モードへ移行するときに、以前のIME状態を復元するプラグインです。  
 Terminal上のVimや`vim -g`で起動したGVimでも動作します。  
 [fcitx-mem](https://github.com/pepo-le/fcitx-mem)を[neocomplete](https://github.com/Shougo/neocomplete.vim)と干渉しないようにしたものです。
